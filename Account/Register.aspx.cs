@@ -26,6 +26,17 @@ namespace BooksShopOnline.Account
 
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
                 IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                using (BooksShopOnline.Logic.ShoppingCartActions usersShoppingCart = new
+    BooksShopOnline.Logic.ShoppingCartActions())
+                {
+                    String cartId = usersShoppingCart.GetCartId();
+                    usersShoppingCart.MigrateCart(cartId, user.Id);
+                }
+                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"],
+               Response);
+
+
+
             }
             else 
             {

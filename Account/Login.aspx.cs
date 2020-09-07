@@ -38,6 +38,10 @@ namespace BooksShopOnline.Account
                 switch (result)
                 {
                     case SignInStatus.Success:
+                        BooksShopOnline.Logic.ShoppingCartActions usersShoppingCart = new
+ BooksShopOnline.Logic.ShoppingCartActions();
+                        String cartId = usersShoppingCart.GetCartId();
+                        usersShoppingCart.MigrateCart(cartId, Email.Text);
                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                         break;
                     case SignInStatus.LockedOut:
@@ -57,5 +61,7 @@ namespace BooksShopOnline.Account
                 }
             }
         }
+
+
     }
 }
