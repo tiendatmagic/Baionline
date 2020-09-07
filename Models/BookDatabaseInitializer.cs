@@ -79,7 +79,7 @@ CategoryID = 2
 BookName = "Sapiens: A Brief History of Humankind",
  Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
 ImagePath="Pic4.png",
-UnitPrice = 23.79f,
+UnitPrice = 23.799f,
 CategoryID = 3
  },
  //book 5

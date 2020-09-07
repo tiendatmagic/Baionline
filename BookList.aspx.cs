@@ -1,7 +1,9 @@
-﻿using System;
+﻿using BooksShopOnline.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,5 +15,17 @@ namespace BooksShopOnline
         {
 
         }
+
+        public IQueryable<Book> GetBooks([QueryString("id")] int? categoryId)
+        {
+            var _db = new BooksShopOnline.Models.BookContext();
+            IQueryable<Book> query = _db.Books;
+            if (categoryId.HasValue && categoryId > 0)
+            {
+                query = query.Where(p => p.CategoryID == categoryId);
+            }
+            return query;
+        }
+
     }
 }
