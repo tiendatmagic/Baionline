@@ -6,13 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Diagnostics;
 using BooksShopOnline.Logic;
-
 using BooksShopOnline.Models;
-
-
+using System.Web.ModelBinding;
 namespace BooksShopOnline
 {
-    public partial class AddToCard : System.Web.UI.Page
+    public partial class AddToCart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
