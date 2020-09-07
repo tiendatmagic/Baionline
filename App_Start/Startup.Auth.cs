@@ -59,11 +59,13 @@ namespace BooksShopOnline
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "c0d3r2urpteqabhhd0mranu9hnitegu8",
+                ClientSecret = "oPF_5VoBtgk1VoCQ5_qN3VBa"
+            });
+            
         }
     }
 }
