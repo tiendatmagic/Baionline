@@ -8,6 +8,8 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using BooksShopOnline.Models;
+using BooksShopOnline.Logic;
+
 namespace BooksShopOnline
 {
     public class Global : HttpApplication
@@ -20,6 +22,8 @@ namespace BooksShopOnline
 
             // Initialize the book database.
             Database.SetInitializer(new BookDatabaseInitializer());
+            RoleActions roleActions = new RoleActions();
+            roleActions.AddUserAndRole();
         }
     }
 }
