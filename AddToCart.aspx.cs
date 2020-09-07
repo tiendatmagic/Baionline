@@ -7,6 +7,9 @@ using System.Web.UI.WebControls;
 using System.Diagnostics;
 using BooksShopOnline.Logic;
 
+using BooksShopOnline.Models;
+
+
 namespace BooksShopOnline
 {
     public partial class AddToCard : System.Web.UI.Page
