@@ -72,5 +72,21 @@ namespace BooksShopOnline.Logic
             return _db.ShoppingCartItems.Where(
             c => c.CartId == ShoppingCartId).ToList();
         }
+
+        public decimal GetTotal()
+        {
+            ShoppingCartId = GetCartId();
+            // Tổng tiền mỗi cuốn sách (Item Total) = đơn giá (UnitPrice) nhân
+            // số lượng (Quantity). Tổng của các tổng tiền chính là
+            // số tiền mà người dùng phải trả (Order Total)
+            decimal? total = decimal.Zero;
+            total = (decimal?)(from cartItems in _db.ShoppingCartItems
+                               where cartItems.CartId == ShoppingCartId
+                               select (int?)cartItems.Quantity *
+                                cartItems.Book.UnitPrice).Sum();
+            return total ?? decimal.Zero;
+        }
+
+
     }
 }
