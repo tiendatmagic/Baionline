@@ -37,8 +37,8 @@
 </div>
 
  <hgroup>
-     <h1><%: Title %>.</h1>
- <h2>Các sản phẩm bán chạy:</h2>
+
+ <h2>Đây là danh sách các sản phẩm:</h2>
  </hgroup>
  <asp:ListView ID="bookList"  runat="server" DataKeyNames="BookID"
 GroupItemCount="4"
@@ -75,7 +75,7 @@ style="border:solid" />
  </span>
  </a></h5>
     <p class="card-text"> <span> <b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span></p>
-    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-primary">Đặt hàng ngay</a>
+    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger">Đặt hàng ngay</a>
   </div>
 </div>
 </p>

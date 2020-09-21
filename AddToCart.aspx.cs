@@ -14,9 +14,9 @@ namespace Baitayonline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string rawId = Request.QueryString["ProductID"];
-            int ProductID;
-            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out ProductID))
+            string rawId = Request.QueryString["BookID"];
+            int bookId;
+            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out bookId))
             {
                 using (ShoppingCartActions usersShoppingCart = new
                 ShoppingCartActions())
@@ -26,9 +26,9 @@ namespace Baitayonline
             }
             else
             {
-                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a ProductID.");
+                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a BookId.");
                
-                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a ProductID.");
+                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a BookId.");
            }
             Response.Redirect("ShoppingCart.aspx");
         }
