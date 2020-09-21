@@ -177,7 +177,7 @@
       <DependentUpon>Baitayonline.mdf</DependentUpon>
     </Content>
     <Content Include="BookDetails.aspx" />
-    <Content Include="BookList.aspx" />
+    <Content Include="ProductList.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -397,12 +397,12 @@
     <Compile Include="BookDetails.aspx.designer.cs">
       <DependentUpon>BookDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BookList.aspx.cs">
-      <DependentUpon>BookList.aspx</DependentUpon>
+    <Compile Include="ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BookList.aspx.designer.cs">
-      <DependentUpon>BookList.aspx</DependentUpon>
+    <Compile Include="ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
