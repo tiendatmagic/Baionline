@@ -69,7 +69,7 @@ GroupItemCount="4"
          <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
 style="border:solid" />
   <div class="card-body">
-    <h5 class="card-title"> <a href="BookDetails.aspx?bookID=<%#:Item.BookID%>">
+    <h5 class="card-title"> <a href="ProductDetails.aspx?bookID=<%#:Item.BookID%>">
  <span>
  <%#:Item.BookName%>
  </span>
