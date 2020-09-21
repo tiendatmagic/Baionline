@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BooksShopOnline
+namespace Baitayonline
 {
     public partial class Contact : Page
     {

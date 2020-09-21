@@ -17,13 +17,13 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./Images/c1.jpg" alt="Los Angeles" width="100%" height="400">
+      <img src="./Images/c1.jpg" alt="carousel" width="100%" height="400">
     </div>
     <div class="carousel-item">
-      <img src="./Images/c2.jpg" alt="Los Angeles" width="100%" height="400">
+      <img src="./Images/c2.jpg" alt="carousel" width="100%" height="400">
     </div>
     <div class="carousel-item">
-      <img src="./Images/c3.jpg" alt="Los Angeles" width="100%" height="400">
+      <img src="./Images/c3.jpg" alt="carousel" width="100%" height="400">
     </div>
   </div>
   
@@ -44,11 +44,11 @@
 GroupItemCount="4"
  ItemType="Baitayonline.Models.Book" SelectMethod="GetBooks">
  <EmptyDataTemplate>
- <table >
- <tr>
- <td>No data was returned.</td>
- </tr>
- </table>
+
+
+ <p>No data was returned.</p>
+ 
+ 
  </EmptyDataTemplate>
  <EmptyItemTemplate>
  <td/>
