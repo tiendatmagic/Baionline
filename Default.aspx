@@ -58,44 +58,33 @@ GroupItemCount="4"
  <td id="itemPlaceholder" runat="server"></td>
  </tr>
  </GroupTemplate>
- <ItemTemplate>
- <td runat="server">
- <table>
- <tr>
- <td>
- <a href="BookDetails.aspx?bookID=<%#:Item.BookID%>">
- <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272"
-style="border:solid" /></a>
- </td>
- </tr>
- <tr>
- <td>
- <a href="BookDetails.aspx?bookID=<%#:Item.BookID%>">
+
+ 
+
+
+
+     <ItemTemplate>
+     <div class="card" runat="server" style="width: 18rem;">
+
+         <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
+style="border:solid" />
+  <div class="card-body">
+    <h5 class="card-title"> <a href="BookDetails.aspx?bookID=<%#:Item.BookID%>">
  <span>
  <%#:Item.BookName%>
  </span>
- </a>
-<br />
- <span>
- <b>Giá |
-</b><%#:String.Format("{0:n}",Item.UnitPrice)%>
- </span><span>đ</span>
-<br />
-     <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
- <span class="dathang">
- <b>Đặt hàng<b>
- </span>
- </a>
-
- </td>
- </tr>
-<tr>
- <td>&nbsp;</td>
- </tr>
- </table>
+ </a></h5>
+    <p class="card-text"> <span> <b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span></p>
+    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-primary">Đặt hàng ngay</a>
+  </div>
+</div>
 </p>
  </td>
+
+
+
  </ItemTemplate>
+
  <LayoutTemplate>
  <table style="width:100%;>
  <tbody>
