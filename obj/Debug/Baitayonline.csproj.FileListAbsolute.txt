@@ -100,3 +100,4 @@ E:\Baitayonline\Baitayonline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatf
 E:\Baitayonline\Baitayonline\obj\Debug\Baitayonline.csproj.CopyComplete
 E:\Baitayonline\Baitayonline\obj\Debug\Baitayonline.dll
 E:\Baitayonline\Baitayonline\obj\Debug\Baitayonline.pdb
+E:\Baitayonline\Baitayonline\obj\Debug\Baitayonline.csprojAssemblyReference.cache
