@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Baitayonline.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> Books Shop Online </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web"
+                    Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web"
+                    Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web"
+                    Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;">
+           
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" runat="server" href="~/">Trang chủ</a>
+                        </li>                       
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Contact">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/BookList">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" id="adminLink" visible="false"
+                                href="~/Admin/AdminPage">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/ShoppingCart" ID="cartCount">&nbsp;</a>
+                        </li>
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" runat="server" href="~/Account/Login">Đăng nhập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" runat="server" href="~/Account/Register">Đăng ký</a>
+                                </li>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <li class="nav-item">
+                                    <a class="nav-link" runat="server" href="~/Account/Manage"
+                                        title="Manage your account">Hello,
+                                        <%: Context.User.Identity.GetUserName()  %> !
+
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                   
+                                    <asp:LoginStatus class="nav-link" runat="server" LogoutAction="Redirect"
+                                        LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                        
+                                </li>
+
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </ul>
+
+
+                </div>
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+        <!--******thêm logo*****-->
+        <div id="TitleContent" style="text-align: center">
+            <a runat="server" href="~/">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.png" Height="130px" BorderStyle="None" />
+            </a><br />
+        </div>
+        <!--***********************-->
+        <div id="CategoryMenu" style="text-align: center">
+            <asp:ListView ID="categoryList" ItemType="Baitayonline.Models.Category" runat="server"
+                SelectMethod="GetCategories">
+                <ItemTemplate>
+                    <b style="font-size: large; font-style: normal">
+                        <a href="/BookList.aspx?id=<%#: Item.CategoryID %>">
+                            <%#: Item.CategoryName %>
+                        </a>
+                    </b>
+                </ItemTemplate>
+                <ItemSeparatorTemplate> | </ItemSeparatorTemplate>
+            </asp:ListView>
+        </div>
+
+        <div class="body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+
+
+            <div class="hotline-phone-ring-wrap">
+	<div class="hotline-phone-ring">
+		<div class="hotline-phone-ring-circle"></div>
+		<div class="hotline-phone-ring-circle-fill"></div>
+		<div class="hotline-phone-ring-img-circle">
+		<a href="tel:113" class="pps-btn-img">
+			<img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+		</a>
+		</div>
+	</div>
+	<div class="hotline-bar">
+		<a href="tel:113">
+			<span class="text-hotline">113</span>
+		</a>
+	</div>
+</div>
+
+
+        </div>
+            <footer>
+                
+                        <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;">
+            <p class="navbar-brand">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-diamond-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.615L8 8.707l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.615-.707L7.293 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+                </svg>
+
+                &copy; <%: DateTime.Now.Year %> -Web Bán Bài Online</p>
+
+
+        </nav>
+            </footer>
+        
+    </form>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+
+</html>
