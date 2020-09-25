@@ -48,14 +48,17 @@
   </a>
 </div>
 
- <hgroup>
-
+      <div class="mg">
+          
  <h2>Đây là danh sách các sản phẩm:</h2>
- </hgroup>
+          <div class="row">
+
  <asp:ListView ID="bookList"  runat="server" DataKeyNames="BookID"
+
 GroupItemCount="4"
  ItemType="Baitayonline.Models.Book" SelectMethod="GetBooks">
- <EmptyDataTemplate>
+ <EmptyDataTemplate>  
+    
 
 
  <p>No data was returned.</p>
@@ -63,7 +66,9 @@ GroupItemCount="4"
  
  </EmptyDataTemplate>
  <EmptyItemTemplate>
+ 
  <td/>
+    
  </EmptyItemTemplate>
  <GroupTemplate>
  <tr id="itemPlaceholderContainer" runat="server">
@@ -74,8 +79,10 @@ GroupItemCount="4"
  
 
 
-
+     
      <ItemTemplate>
+
+       
      <div class="card" runat="server" style="width: 18rem;">
 
          <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
@@ -116,6 +123,8 @@ style="width:100%">
  </table>
  </LayoutTemplate>
  </asp:ListView>
+ </div> 
+     </div>
  </div>
  </section>
 </asp:Content>

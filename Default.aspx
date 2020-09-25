@@ -36,10 +36,10 @@
   </a>
 </div>
      <div class="mg">
- <hgroup>
-     <h1><%: Title %>.</h1>
+              <h1><%: Title %>.</h1>
  <h2>Các sản phẩm bán chạy:</h2>
- </hgroup>
+         <div class="row">
+
  <asp:ListView ID="bookList"  runat="server" DataKeyNames="BookID"
 GroupItemCount="4"
  ItemType="Baitayonline.Models.Book" SelectMethod="GetBooks">
@@ -106,5 +106,6 @@ style="width:100%">
  </asp:ListView>
  </div>
      </div>
+            </div>
  </section>
 </asp:Content>
