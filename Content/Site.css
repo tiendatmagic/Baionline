@@ -10,6 +10,7 @@ body,html {
 }
 .mg {
     margin-left: 10px;
+    text-align:center;
 }
 .dathang {
     background-color: hotpink;
@@ -159,6 +160,12 @@ body,html {
         .hotline-bar > a:active {
             color: #fff;
         }
+
+
+    .row {
+        justify-content: center;
+    }
+
 
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {
