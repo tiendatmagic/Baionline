@@ -203,3 +203,4 @@ C:\temp\Baitayonline\obj\Debug\Baitayonline.csproj.CoreCompileInputs.cache
 C:\temp\Baitayonline\obj\Debug\Baitayonline.csproj.CopyComplete
 C:\temp\Baitayonline\obj\Debug\Baitayonline.dll
 C:\temp\Baitayonline\obj\Debug\Baitayonline.pdb
+C:\temp\Baitayonline\obj\Debug\Baitayonline.csprojAssemblyReference.cache
