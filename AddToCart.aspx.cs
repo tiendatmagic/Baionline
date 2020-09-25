@@ -26,9 +26,9 @@ namespace Baitayonline
             }
             else
             {
-                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a BookId.");
+                Debug.Fail("Toang thật rồi");
                
-                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a BookId.");
+                throw new Exception("Toang thật rồi");
            }
             Response.Redirect("ShoppingCart.aspx");
         }
