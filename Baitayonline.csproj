@@ -168,14 +168,6 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
-    <Content Include="App_Data\aspnet-Baitayonline.mdf" />
-    <Content Include="App_Data\aspnet-Baitayonline_log.ldf">
-      <DependentUpon>aspnet-Baitayonline.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\Baitayonline.mdf" />
-    <Content Include="App_Data\Baitayonline_log.ldf">
-      <DependentUpon>Baitayonline.mdf</DependentUpon>
-    </Content>
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
     <Content Include="Contact.aspx" />
@@ -452,7 +444,9 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">

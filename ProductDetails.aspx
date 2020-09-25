@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Book Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="Baitayonline.BookDetails" %>
+﻿<%@ Page Title="Các mặt hàng" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="Baitayonline.BookDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <asp:FormView ID="bookDetail" runat="server" ItemType="Baitayonline.Models.Book"
 SelectMethod ="GetDetails"

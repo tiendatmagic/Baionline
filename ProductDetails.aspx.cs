@@ -15,7 +15,7 @@ namespace Baitayonline
 
         }
 
-        public IQueryable<Book> GetDetails([QueryString("bookID")] int? bookId)
+        public IQueryable<Book> GetDetails([QueryString("productID")] int? bookId)
         {
             var _db = new Baitayonline.Models.BookContext();
             IQueryable<Book> query = _db.Books;
