@@ -1,7 +1,19 @@
 ﻿<%@ Page Title="Sản phẩm" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="Baitayonline.BookList" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+        <div id="CategoryMenu" style="text-align: center">
+            <asp:ListView ID="categoryList" ItemType="Baitayonline.Models.Category" runat="server"
+                SelectMethod="GetCategories">
+                <ItemTemplate>
+                    <b style="font-size: large; font-style: normal">
+                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                            <%#: Item.CategoryName %>
+                        </a>
+                    </b>
+                </ItemTemplate>
+                <ItemSeparatorTemplate> | </ItemSeparatorTemplate>
+            </asp:ListView>
+        </div>
 
         <section>
  <div>

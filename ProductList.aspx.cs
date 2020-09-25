@@ -7,6 +7,17 @@ using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
+using System.Security.Claims;
+using System.Security.Principal;
+
+using System.Web.Security;
+
+
+using Microsoft.AspNet.Identity;
+using Baitayonline.Models;
+
+using Baitayonline.Logic;
 namespace Baitayonline
 {
     public partial class BookList : System.Web.UI.Page
@@ -26,6 +37,14 @@ namespace Baitayonline
             }
             return query;
         }
+        public IQueryable<Category> GetCategories()
+        {
+            var _db = new Baitayonline.Models.BookContext();
+            IQueryable<Category> query = _db.Categories;
+            return query;
+        }
+
+
 
     }
 }

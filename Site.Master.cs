@@ -89,12 +89,7 @@ namespace Baitayonline
             }
         }
 
-        public IQueryable<Category> GetCategories()
-        {
-            var _db = new Baitayonline.Models.BookContext();
-            IQueryable<Category> query = _db.Categories;
-            return query;
-        }
+
 
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
