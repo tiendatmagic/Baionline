@@ -35,7 +35,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-
+     <div class="mg">
  <hgroup>
      <h1><%: Title %>.</h1>
  <h2>Các sản phẩm bán chạy:</h2>
@@ -105,5 +105,6 @@ style="width:100%">
  </LayoutTemplate>
  </asp:ListView>
  </div>
+     </div>
  </section>
 </asp:Content>
