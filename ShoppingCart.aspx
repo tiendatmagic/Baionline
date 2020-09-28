@@ -26,7 +26,7 @@ Cart</h1></div>
 Convert.ToDouble(Item.Book.UnitPrice)))%>
  </ItemTemplate>
  </asp:TemplateField>
- <asp:TemplateField HeaderText="Remove Item">
+ <asp:TemplateField HeaderText="Chọn">
  <ItemTemplate>
  <asp:CheckBox id="Remove" runat="server"></asp:CheckBox>
  </ItemTemplate>
@@ -45,12 +45,12 @@ Convert.ToDouble(Item.Book.UnitPrice)))%>
 <tr>
 <td>
     <div class="cart" id="cart">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMBZS8uUU9C5-5jE36cwGFp5jjkj4f4OdrKjbFT1pccTOxWg/viewform?embedded=true" width="640" height="410" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMBZS8uUU9C5-5jE36cwGFp5jjkj4f4OdrKjbFT1pccTOxWg/viewform?embedded=true" width="470px" height="410" frameborder="1" >Đang tải…</iframe>
     </div>
 
-  <asp:Button ID="UpdateBtn" CssClass="btn btn-success" runat="server" Text="Cập nhật"
+  <asp:Button ID="UpdateBtn" CssClass="btn btn-success" runat="server" Text="Cập nhật/Xóa"
 OnClick="UpdateBtn_Click"/>   
-    <input type="button" class="btn btn-success btn-pay" value="Thanh toán"/>.
+    <input type="button" class="btn btn-success btn-pay" value="Thanh toán"/>
         
 </td>
 </tr>

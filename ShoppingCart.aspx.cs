@@ -23,7 +23,7 @@ namespace Baitayonline
                 if (cartTotal > 0)
                 {
                     // Display Total.
-                    lblTotal.Text = String.Format("{0:c}", cartTotal);
+                    lblTotal.Text = String.Format("{0:n}", cartTotal);
                 }
                 else
                 {
