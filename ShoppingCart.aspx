@@ -38,7 +38,7 @@ Convert.ToDouble(Item.Book.UnitPrice)))%>
 <div>
  <p></p>
  <strong>
- <asp:Label ID="LabelTotalText" runat="server" Text="Order Total:"></asp:Label>
+ <asp:Label ID="LabelTotalText" runat="server" Text="Tổng giỏ hàng:"></asp:Label>
  <asp:Label ID="lblTotal" runat="server" EnableViewState="false"></asp:Label>
  </strong>
 </div>

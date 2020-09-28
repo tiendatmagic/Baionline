@@ -64,7 +64,7 @@ namespace Baitayonline
                 }
                 usersShoppingCart.UpdateShoppingCartDatabase(cartId, cartUpdates);
                 CartList.DataBind();
-                lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                lblTotal.Text = String.Format("{0:n}", usersShoppingCart.GetTotal());
                 return usersShoppingCart.GetCartItems();
             }
         }
@@ -92,7 +92,7 @@ namespace Baitayonline
                 }
                 usersShoppingCart.UpdateShoppingCartDatabase(cartId, cartUpdates);
                 CartList.DataBind();
-                lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                lblTotal.Text = String.Format("{0:n}", usersShoppingCart.GetTotal());
                 return usersShoppingCart.GetCartItems();
             }
         }
