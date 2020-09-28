@@ -54,7 +54,7 @@ GroupItemCount="4"
      <ItemTemplate>
 
        
-     <div class="card" runat="server" style="width: 19rem;">
+     <div class="card" runat="server" style="width: 18rem;">
 
          <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
 style="border:solid" />

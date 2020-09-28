@@ -83,7 +83,7 @@ namespace Baitayonline
             using (ShoppingCartActions usersShoppingCart = new
             ShoppingCartActions())
             {
-                string cartStr = string.Format("Cart ({0})",
+                string cartStr = string.Format("Giỏ hàng ({0})",
                 usersShoppingCart.GetCount());
                 cartCount.InnerText = cartStr;
             }

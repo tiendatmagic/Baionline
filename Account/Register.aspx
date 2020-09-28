@@ -2,13 +2,15 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <div class="mgg">
-    <h2><%: Title %>.</h2>
+        <div class="row" style="width:100%">
+<div class="col-lg-8">
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
 
     <div class="form-horizontal">
-        <h4>Create a new account</h4>
+        <div class="formregister">
+        <h4>Tạo tài khoản mới</h4>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
@@ -20,7 +22,7 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Mật khẩu</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
@@ -28,7 +30,7 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="ConfirmPassword" CssClass="col-md-2 control-label">Confirm password</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="ConfirmPassword" CssClass="col-md-4 control-label">Xác nhận mật khẩu</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
@@ -42,6 +44,9 @@
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-danger" />
             </div>
         </div>
-    </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
 </asp:Content>

@@ -77,7 +77,7 @@
                                 href="~/Admin/AdminPage">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/ShoppingCart" ID="cartCount">&nbsp;</a>
+                            <a class="nav-link" runat="server" href="~/ShoppingCart" ID="cartCount"></a>
                         </li>
                         <asp:LoginView runat="server" ViewStateMode="Disabled">
                             <AnonymousTemplate>
