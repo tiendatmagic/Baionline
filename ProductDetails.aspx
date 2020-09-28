@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Các mặt hàng" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="Baitayonline.BookDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="mgg">
 <asp:FormView ID="bookDetail" runat="server" ItemType="Baitayonline.Models.Book"
 SelectMethod ="GetDetails"
  RenderOuterTable="false">
@@ -27,6 +28,13 @@ String.Format("{0:c}",Item.UnitPrice) %></span>
  </td>
  </tr>
  </table>
+
+     <br />
+      <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger"><i class="fas fa-plus"></i> Thêm vào giỏ hàng</a>
+   
  </ItemTemplate>
+
+
  </asp:FormView>
+        </div>
 </asp:Content>

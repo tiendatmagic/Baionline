@@ -46,8 +46,8 @@ CategoryName = "Chỉ dành cho bạn"
  {
  BookID = 1,
  BookName = "TRIDENT DELUXE PLAYING CARDS",
- Description = "300 Years Before A Game of Thrones (A Targaryen History) (A Song of Ice and Fire).",
-        ImagePath = "b1.jpg",
+ Description = "No name",
+ ImagePath = "b1.jpg",
 UnitPrice = 1100000f,
 CategoryID = 1
         },
@@ -56,7 +56,7 @@ CategoryID = 1
  {
  BookID = 2,
 BookName = "VINTAGE FULTON'S PLAYING CARDS LIKE NEW",
-Description = "In this authoritative and engrossing full-scale biography, Walter Isaacson, " + "bestselling author of Einstein and Steve Jobs, shows how the most fascinating of " + "America's founders helped define our national character.",
+Description = "No name",
  ImagePath = "b2.jpg",
  UnitPrice = 400000f,
 CategoryID = 2
@@ -66,7 +66,7 @@ CategoryID = 2
  {
  BookID = 3,
 BookName = "BRUSH PLAYING CARDS LIKE NEW",
- Description = "During Barack Obama's two terms, Pete Souza was with the President " + "during more crucial moments than anyone else--and he photographed them all",
+Description = "No name",
  ImagePath="b3.jpeg",
  UnitPrice = 500000f,
 CategoryID = 2
@@ -77,7 +77,7 @@ CategoryID = 2
  {
  BookID = 4,
 BookName = "SQUEEZERS PLAYING CARDS LIKE NEW",
- Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
+Description = "No name",
 ImagePath="b4.jpg",
 UnitPrice = 300000f,
 CategoryID = 3
@@ -87,7 +87,7 @@ CategoryID = 3
  {
  BookID = 5,
 BookName = "FONTAINE GREEN PLAYING CARDS LIKE NEW",
-Description = "Stephen Covey’s cherished classic commemorates thetimeless wisdom and " + "power of the 7 Habits book, and does it in a highly readable and understandable, infographics format.",
+Description = "No name",
  ImagePath= "b5.jpg",
 UnitPrice = 280000f,
 CategoryID = 4
@@ -97,7 +97,7 @@ CategoryID = 4
  {
  BookID = 6,
 BookName = "KING SLAYER PLAYING CARDS LIKE NEW",
- Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
+Description = "No name",
 ImagePath="b6.jpg",
 UnitPrice = 300000f,
 CategoryID = 3
@@ -107,7 +107,7 @@ CategoryID = 3
  {
  BookID = 7,
 BookName = "ALPHABET PLAYING CARDS",
- Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
+Description = "No name",
 ImagePath="b7.png",
 UnitPrice = 280000f,
 CategoryID = 1
@@ -117,7 +117,7 @@ CategoryID = 1
  {
  BookID = 8,
 BookName = "1987 JAN PLAYING CARDS",
- Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
+Description = "No name",
 ImagePath="b8.jpg",
 UnitPrice = 250000f,
 CategoryID = 2
@@ -127,7 +127,7 @@ CategoryID = 2
  {
  BookID = 9,
 BookName = "MONO X PLAYING CARDS LIKE NEW",
- Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
+Description = "No name",
 ImagePath="b9.jpg",
 UnitPrice = 370000f,
 CategoryID = 3
@@ -137,7 +137,7 @@ CategoryID = 3
  {
  BookID = 10,
 BookName = "SMOKE AND MIRRORS V6 PLAYING CARDS LIKE NEW",
- Description = "One hundred thousand years ago, at least six different species of " +  "humans inhabited Earth. Yet today there is only one—homo sapiens. " + "What happened to the others? And what may happen to us?",
+Description = "No name",
 ImagePath="b10.jpg",
 UnitPrice = 360000f,
 CategoryID = 3

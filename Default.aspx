@@ -41,7 +41,7 @@
 </div>
      <div class="mg">
 
- <h2>Các sản phẩm bán chạy:</h2>
+ <h2>Sản phẩm mới</h2>
           <div class="row" style="width:100%">
 
  <asp:ListView ID="bookList"  runat="server" DataKeyNames="BookID"

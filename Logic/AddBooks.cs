@@ -18,11 +18,11 @@ namespace Baitayonline.Logic
             myBook.CategoryID = Convert.ToInt32(BookCategory);
             using (BookContext _db = new BookContext())
             {
-                // Thêm sách đến DB.
+ 
                 _db.Books.Add(myBook);
                 _db.SaveChanges();
             }
-            // Thêm sách thành công.
+   
             return true;
         }
     }
