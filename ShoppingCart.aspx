@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
 CodeBehind="ShoppingCart.aspx.cs" Inherits="Baitayonline.ShoppingCart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="mgg">
  <div id="ShoppingCartTitle" runat="server" class="ContentHead"><h1>Shopping
 Cart</h1></div>
  <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="False"
@@ -49,4 +50,6 @@ OnClick="UpdateBtn_Click" />
 </td>
 </tr>
 </table>
+
+    </div>
 </asp:Content>

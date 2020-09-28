@@ -54,7 +54,7 @@ GroupItemCount="4"
      <ItemTemplate>
 
        
-     <div class="card" runat="server" style="width: 20rem;">
+     <div class="card" runat="server" style="width: 19rem;">
 
          <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
 style="border:solid" />
@@ -66,7 +66,7 @@ style="border:solid" />
  </a></h5>
     <p class="card-text"> <span> <b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span></p>
     <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger">Thêm vào giỏ hàng</a>
-      <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger">Mua ngay</a>
+
   </div>
 </div>
 </p>

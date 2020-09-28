@@ -3,6 +3,7 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <div class="mgg">
     <h2><%: Title %>.</h2>
 
     <div class="row">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
+                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-success" />
                         </div>
                     </div>
                 </div>
@@ -62,4 +63,5 @@
             </section>
         </div>
     </div>
+        </div>
 </asp:Content>
