@@ -13,16 +13,15 @@ Cart</h1></div>
  SortExpression="BookID" />
  <asp:BoundField DataField="Book.BookName" HeaderText="Name" />
  <asp:BoundField DataField="Book.UnitPrice" HeaderText="Price (each)"
- DataFormatString="{0:c}"/>
+ DataFormatString="{0:n}"/>
  <asp:TemplateField HeaderText="Quantity">
- <ItemTemplate>
- <asp:TextBox ID="PurchaseQuantity" Width="40"
- runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox>
+ <ItemTemplate> 
+ <asp:TextBox ID="PurchaseQuantity" Width="40" runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox>
  </ItemTemplate>
  </asp:TemplateField>
  <asp:TemplateField HeaderText="Item Total">
  <ItemTemplate>
- <%#: String.Format("{0:c}",
+<%#:String.Format("{0:n}",
  ((Convert.ToDouble(Item.Quantity)) *
 Convert.ToDouble(Item.Book.UnitPrice)))%>
  </ItemTemplate>
@@ -45,11 +44,14 @@ Convert.ToDouble(Item.Book.UnitPrice)))%>
     <table>
 <tr>
 <td>
-    
+    <div class="cart" id="cart">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMBZS8uUU9C5-5jE36cwGFp5jjkj4f4OdrKjbFT1pccTOxWg/viewform?embedded=true" width="640" height="410" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+    </div>
+
   <asp:Button ID="UpdateBtn" CssClass="btn btn-success" runat="server" Text="Cập nhật"
-OnClick="UpdateBtn_Click"/>
-<asp:Button ID="PayBtn" CssClass="btn btn-success" runat="server" Text="Thanh toán"
-OnClick="PayBtn_Click" />
+OnClick="UpdateBtn_Click"/>   
+    <input type="button" class="btn btn-success btn-pay" value="Thanh toán"/>.
+        
 </td>
 </tr>
 </table>

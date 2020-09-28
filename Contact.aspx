@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="mgg">
-    <h2><%: Title %>.</h2>
+
     <h3>Thông tin liên hệ</h3>
     <address>
         Tiendatmagic<br />

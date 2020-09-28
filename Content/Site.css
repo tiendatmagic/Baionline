@@ -171,6 +171,9 @@ body,html {
         justify-content: center;
     }
 
+.cart {
+    display:none;
+}
 
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {

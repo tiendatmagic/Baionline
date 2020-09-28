@@ -176,6 +176,7 @@
     </form>
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/control.js"></script>
 </body>
 
 </html>

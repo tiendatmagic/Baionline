@@ -31,7 +31,7 @@ namespace Baitayonline
                     lblTotal.Text = "";
                     ShoppingCartTitle.InnerText = "Giỏ hàng rỗng";
                     UpdateBtn.Visible = false;
-                    PayBtn.Visible = false;
+                    
                 }
             }
         }
@@ -68,6 +68,36 @@ namespace Baitayonline
                 return usersShoppingCart.GetCartItems();
             }
         }
+
+        public List<CartItem> PayCartItems()
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                String cartId = usersShoppingCart.GetCartId();
+                ShoppingCartActions.ShoppingCartUpdates[] cartUpdates = new
+                ShoppingCartActions.ShoppingCartUpdates[CartList.Rows.Count];
+                for (int i = 0; i < CartList.Rows.Count; i++)
+                {
+                    IOrderedDictionary rowValues = new OrderedDictionary();
+                    rowValues = GetValues(CartList.Rows[i]);
+                    cartUpdates[i].BookId = Convert.ToInt32(rowValues["BookID"]);
+                    CheckBox cbRemove = new CheckBox();
+                    cbRemove = (CheckBox)CartList.Rows[i].FindControl("Remove");
+                    cartUpdates[i].RemoveItem = cbRemove.Checked;
+                    TextBox quantityTextBox = new TextBox();
+                    quantityTextBox =
+                   (TextBox)CartList.Rows[i].FindControl("PurchaseQuantity");
+                    cartUpdates[i].PurchaseQuantity =
+                     Convert.ToInt16(quantityTextBox.Text.ToString());
+                }
+                usersShoppingCart.UpdateShoppingCartDatabase(cartId, cartUpdates);
+                CartList.DataBind();
+                lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                return usersShoppingCart.GetCartItems();
+            }
+        }
+
+
         public static IOrderedDictionary GetValues(GridViewRow row)
         {
             IOrderedDictionary values = new OrderedDictionary();
@@ -89,6 +119,9 @@ namespace Baitayonline
 
         protected void PayBtn_Click(object sender, EventArgs e)
         {
+           
+            PayCartItems();
+
 
         }
     }
