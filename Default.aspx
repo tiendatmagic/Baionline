@@ -40,7 +40,7 @@
   </a>
 </div>
      <div class="mg">
-              <h1><%: Title %>.</h1>
+
  <h2>Các sản phẩm bán chạy:</h2>
          <div class="row">
 
@@ -79,7 +79,8 @@ style="border:solid" />
  </span>
  </a></h5>
     <p class="card-text"> <span> <b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span></p>
-    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger">Đặt hàng ngay</a>
+    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger">Thêm vào giỏ hàng</a>
+      <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger">Mua ngay</a>
   </div>
 </div>
 </p>
