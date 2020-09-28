@@ -31,7 +31,7 @@ namespace Baitayonline
                     lblTotal.Text = "";
                     ShoppingCartTitle.InnerText = "Giỏ hàng rỗng";
                     UpdateBtn.Visible = false;
-
+                    PayBtn.Visible = false;
                 }
             }
         }
@@ -87,8 +87,9 @@ namespace Baitayonline
             UpdateCartItems();
         }
 
+        protected void PayBtn_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
