@@ -87,10 +87,7 @@ style="width:100%">
  </table>
  </td>
  </tr>
-<tr>
- <td></td>
- </tr>
-<tr></tr>
+
  </tbody>
  </table>
  </LayoutTemplate>
