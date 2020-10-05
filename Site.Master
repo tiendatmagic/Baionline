@@ -12,7 +12,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="Content/all.min.css" rel="stylesheet" />
 </head>
@@ -53,65 +53,65 @@
 
 
 
-    
-            <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important; color:white;">
-           
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/">Trang chủ</a>
-                        </li>                       
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Contact">Liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/ProductList">Sản phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" id="adminLink" visible="false"
-                                href="~/Admin/AdminPage">Admin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/ShoppingCart" ID="cartCount"></a>
-                        </li>
-                        <asp:LoginView runat="server" ViewStateMode="Disabled">
-                            <AnonymousTemplate>
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link" runat="server" href="~/Account/Login">Đăng nhập</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" runat="server" href="~/Account/Register">Đăng ký</a>
-                                </li>
-                            </AnonymousTemplate>
-                            <LoggedInTemplate>
-                                <li class="nav-item">
-                                    <a class="nav-link" runat="server" href="~/Account/Manage"
-                                        title="Manage your account">Hello,
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important; color: white;">
+
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/Contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/ProductList">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" id="adminLink" visible="false"
+                            href="~/Admin/AdminPage">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/ShoppingCart" id="cartCount"></a>
+                    </li>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="~/Account/Login">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="~/Account/Register">Đăng ký</a>
+                            </li>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <li class="nav-item">
+                                <a class="nav-link" runat="server" href="~/Account/Manage"
+                                    title="Manage your account">Hello,
                                         <%: Context.User.Identity.GetUserName()  %> !
 
-                                    </a>
+                                </a>
 
-                                </li>
-                                <li class="nav-item">
-                                   
-                                    <asp:LoginStatus class="nav-link" runat="server" LogoutAction="Redirect"
-                                        LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                        
-                                </li>
+                            </li>
+                            <li class="nav-item">
 
-                            </LoggedInTemplate>
-                        </asp:LoginView>
-                    </ul>
+                                <asp:LoginStatus class="nav-link" runat="server" LogoutAction="Redirect"
+                                    LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+
+                            </li>
+
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </ul>
 
 
-                </div>
-            </nav>
+            </div>
+        </nav>
 
 
 
@@ -127,7 +127,8 @@
         <div id="TitleContent" style="text-align: center">
             <a runat="server" href="~/">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.png" Height="130px" BorderStyle="None" />
-            </a><br />
+            </a>
+            <br />
         </div>
         <!--***********************-->
 
@@ -139,74 +140,75 @@
 
 
             <div class="hotline-phone-ring-wrap">
-	<div class="hotline-phone-ring">
-		<div class="hotline-phone-ring-circle"></div>
-		<div class="hotline-phone-ring-circle-fill"></div>
-		<div class="hotline-phone-ring-img-circle">
-		<a href="tel:113" class="pps-btn-img">
-			<img src="Images/icon-call-nh.png" alt="Gọi điện thoại" width="50">
-
-        </a>
-		</div>
-	</div>
-	<div class="hotline-bar">
-		<a href="tel:0123456789">
-			<span class="text-hotline">0123456789</span>
-		</a>
-	</div>
-</div>
+                <div class="hotline-phone-ring">
+                    <div class="hotline-phone-ring-circle"></div>
+                    <div class="hotline-phone-ring-circle-fill"></div>
+                    <div class="hotline-phone-ring-img-circle">
+                        <a href="tel:113" class="pps-btn-img">
+                            <img src="../Images/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="hotline-bar">
+                    <a href="tel:0123456789">
+                        <span class="text-hotline">0123456789</span>
+                    </a>
+                </div>
+            </div>
 
 
         </div>
-        
-            <footer>
-                
-                        <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;color:white;">
-            <p class="navbar-brand">
-                <div class="col-sm-4 col-12">
-                    <h4>CHÍNH SÁCH</h4>
-                    <ul>
-                        <li>Chính sánh an toàn</li>
-                   <li>Miễn phí vận chuyền</li>
-                   
+
+        <footer>
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important; color: white;">
+                <p class="navbar-brand">
+                    <div class="col-sm-4 col-12">
+                        <h4>CHÍNH SÁCH</h4>
+                        <ul>
+                            <li>Chính sánh an toàn</li>
+                            <li>Miễn phí vận chuyền</li>
+
                         </ul>
 
-                                        <div class="social">
-                        <a href="#"><span class="fab fa-facebook-f pd-3"></span></a>
-                        <a href="#"><span class="fab fa-twitter pd-3"></span></a>
-                        <a href="#"><span class="fab fa-instagram pd-3"></span></a>
-                        <a href="#"><span class="fab fa-youtube pd-3"></span></a>
+                        <div class="social">
+                            <a href="#"><span class="fab fa-facebook-f pd-3"></span></a>
+                            <a href="#"><span class="fab fa-twitter pd-3"></span></a>
+                            <a href="#"><span class="fab fa-instagram pd-3"></span></a>
+                            <a href="#"><span class="fab fa-youtube pd-3"></span></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <h4>ĐỊA CHỈ</h4>
-                                    <div class="content">
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Nha Trang</span>
+                    <div class="col-sm-4 col-12">
+                        <h4>ĐỊA CHỈ</h4>
+                        <div class="content">
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                <span class="text">Nha Trang</span>
+                            </div>
+                            <div class="phone">
+                                <span class="fas fa-phone-alt"></span>
+                                <span class="text">0901980543</span>
+                            </div>
+                            <div class="email">
+                                <span class="fas fa-envelope"></span>
+                                <span class="text">tiendatmagic8@gmail.com</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="phone">
-                        <span class="fas fa-phone-alt"></span>
-                        <span class="text">0901980543</span>
-                    </div>
-                    <div class="email">
-                        <span class="fas fa-envelope"></span>
-                        <span class="text">tiendatmagic8@gmail.com</span>
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-4 col-12 text-center">
-                   &copy; <%: DateTime.Now.Year %> -Web Bán Bài Online</p>
+                    <div class="col-sm-4 col-12 text-center">
+                        &copy; <%: DateTime.Now.Year %>
+                    -Web Bán Bài Online
+                </p>
 
                 </div>
                 
 
-        </nav>
-            </footer>
-        
+            </nav>
+        </footer>
 
 
-        
+
+
     </form>
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>

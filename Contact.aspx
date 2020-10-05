@@ -3,12 +3,13 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="mgg">
 
-    <h3>Thông tin liên hệ</h3>
-    <address>
-        Tiendatmagic<br />
-        Số điện thoại: 0123456789 <br />
+        <h3>Thông tin liên hệ</h3>
+        <address>
+            Tiendatmagic<br />
+            Số điện thoại: 0123456789
+            <br />
 
-    </address>
+        </address>
 
-</div>
+    </div>
 </asp:Content>
