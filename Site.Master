@@ -160,7 +160,7 @@
         
             <footer>
                 
-                        <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;">
+                        <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;color:white;">
             <p class="navbar-brand">
                 <div class="col">
                     <h4>CHÍNH SÁCH</h4>
@@ -182,15 +182,15 @@
                                     <div class="content">
                     <div class="place">
                         <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Diên Khánh-Khánh Hòa</span>
+                        <span class="text">Nha Trang</span>
                     </div>
                     <div class="phone">
                         <span class="fas fa-phone-alt"></span>
-                        <span class="text">0357284550</span>
+                        <span class="text">0901980543</span>
                     </div>
                     <div class="email">
                         <span class="fas fa-envelope"></span>
-                        <span class="text">thuongnguyen.18062000@gmail.com</span>
+                        <span class="text">tiendatmagic8@gmail.com</span>
                     </div>
                 </div>
                 </div>
