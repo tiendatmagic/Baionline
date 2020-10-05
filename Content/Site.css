@@ -184,7 +184,11 @@ body,html {
     margin-left: 30%;
 }
 
-
+.social span {
+    transform: scale(2.1);
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
 
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {

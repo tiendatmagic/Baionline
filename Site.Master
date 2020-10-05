@@ -163,7 +163,7 @@
                 
                         <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;color:white;">
             <p class="navbar-brand">
-                <div class="col">
+                <div class="col-sm-4 col-12">
                     <h4>CHÍNH SÁCH</h4>
                     <ul>
                         <li>Chính sánh an toàn</li>
@@ -172,13 +172,13 @@
                         </ul>
 
                                         <div class="social">
-                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#"><span class="fab fa-twitter"></span></a>
-                        <a href="#"><span class="fab fa-instagram"></span></a>
-                        <a href="#"><span class="fab fa-youtube"></span></a>
+                        <a href="#"><span class="fab fa-facebook-f pd-3"></span></a>
+                        <a href="#"><span class="fab fa-twitter pd-3"></span></a>
+                        <a href="#"><span class="fab fa-instagram pd-3"></span></a>
+                        <a href="#"><span class="fab fa-youtube pd-3"></span></a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-4 col-12">
                     <h4>ĐỊA CHỈ</h4>
                                     <div class="content">
                     <div class="place">
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-4 col-12 text-center">
                    &copy; <%: DateTime.Now.Year %> -Web Bán Bài Online</p>
 
                 </div>
