@@ -8,7 +8,7 @@
                     <p class="text-danger">
                         <asp:Literal runat="server" ID="ErrorMessage" />
                     </p>
-
+                     
                     <div class="form-horizontal">
                         <div class="formregister">
                             <h4 class="text-center">Tạo tài khoản mới</h4>
