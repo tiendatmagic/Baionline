@@ -54,7 +54,7 @@
 
 
     
-            <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important;">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important; color:white;">
            
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -63,7 +63,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" runat="server" href="~/">Trang chủ</a>
                         </li>                       
                         <li class="nav-item">
@@ -144,8 +144,9 @@
 		<div class="hotline-phone-ring-circle-fill"></div>
 		<div class="hotline-phone-ring-img-circle">
 		<a href="tel:113" class="pps-btn-img">
-			<img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
-		</a>
+			<img src="Images/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+
+        </a>
 		</div>
 	</div>
 	<div class="hotline-bar">
