@@ -34,7 +34,7 @@
             </a>
          </div>
          <div class="mg">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm sản phẩm" title="Nhập vào ô tìm kiếm">
             <h2>Sản phẩm mới</h2>
             <div class="row" id="cardd" style="width:100%">
                <asp:ListView ID="bookList"  runat="server" DataKeyNames="BookID"
