@@ -33,10 +33,10 @@
             <span class="carousel-control-next-icon"></span>
             </a>
          </div>
-         <div class="mg" id="cardd">
+         <div class="mg">
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
             <h2>Sản phẩm mới</h2>
-            <div class="row" style="width:100%">
+            <div class="row" id="cardd" style="width:100%">
                <asp:ListView ID="bookList"  runat="server" DataKeyNames="BookID"
                   GroupItemCount="4"
                   ItemType="Baitayonline.Models.Book" SelectMethod="GetBooks">
@@ -56,7 +56,7 @@
                         <img src ="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
                            style="border: 0.1px solid black" />
                         <div class="card-body">
-                           <h5 class="card-title"> A<a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
+                           <h5 class="card-title"> <a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
                               <span>
                               <%#:Item.BookName%>
                               </span>
@@ -69,7 +69,7 @@
                     
                   </ItemTemplate>
                   <LayoutTemplate>
-                     <table style="width:100%;>
+                     <table style="width:100%;">
                         <tbody>
                         
                         
