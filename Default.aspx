@@ -35,7 +35,7 @@
                 </a>
             </div>
             <div class="mg">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm sản phẩm" title="Nhập vào ô tìm kiếm">
+                <input type="text" id="myInput" class="form-control" style="width:300px" onkeyup="myFunction()" placeholder="Tìm kiếm sản phẩm" title="Nhập vào ô tìm kiếm">
 
                 <h2>Sản phẩm mới</h2>
                 <div class="row" id="cardd" style="width: 100%">
@@ -55,8 +55,7 @@
                         </GroupTemplate>
                         <ItemTemplate>
                             <div class="card" runat="server" style="width: 18rem;">
-                                <img src="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
-                                    style="border: 0.1px solid black" />
+                               <a href="ProductDetails.aspx?productID=<%#:Item.BookID%>"> <img src="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap" /></a>
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
                                         <span>
