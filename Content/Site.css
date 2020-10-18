@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body, html {
@@ -213,6 +213,7 @@ body, html {
     overflow: hidden;
     background: #FF0033;
     z-index: 1;
+    color: white !important;
 }
 
     .btn-red::after {
@@ -226,17 +227,29 @@ body, html {
         z-index: -1;
         transform: translateX(-100%);
         transition: transform, 0.3s;
+        color: white !important;
     }
 
-    .btn-red span {
-        position: relative;
-        z-index: 10;
-    }
+
 
     .btn-red:hover::after {
         transform: translateX(0%);
         transition: transform, 0.3s;
+        color: white !important;
     }
+
+.navbar-menu {
+    background-color: deeppink;
+}
+
+    .navbar-menu a {
+        color: white !important;
+    }
+
+    .navbar-menu a:hover {
+        color: blue !important;
+    }
+
 
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {

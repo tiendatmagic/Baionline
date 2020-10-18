@@ -51,7 +51,7 @@ namespace Baitayonline.Account
                         break;
                     case SignInStatus.Failure:
                     default:
-                        FailureText.Text = "Invalid login attempt";
+                        FailureText.Text = "Đăng nhập thất bại";
                         ErrorMessage.Visible = true;
                         break;
                 }

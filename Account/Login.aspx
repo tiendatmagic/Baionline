@@ -20,14 +20,14 @@
                                 <div>
                                     <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                                     <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                        CssClass="text-danger" ErrorMessage="The email field is required." />
+                                        CssClass="text-danger" ErrorMessage="Email không được bỏ trống" />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <asp:Label runat="server" AssociatedControlID="Password" CssClass="control-label">Mật khẩu:</asp:Label>
                                 <div>
                                     <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="Mật khẩu không được bỏ trống" />
                                 </div>
                             </div>
                             <div class="form-center" style="text-align: center">

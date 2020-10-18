@@ -54,7 +54,7 @@ Convert.ToDouble(Item.Book.UnitPrice)))%>
 
                     <asp:Button ID="UpdateBtn" CssClass="btn btn-success" runat="server" Text="Cập nhật/Xóa"
                         OnClick="UpdateBtn_Click" />
-                    <input type="button" class="btn btn-success btn-pay" value="Thanh toán" />
+                    <input type="button" class="btn btn-red btn-pay" value="Thanh toán" />
 
                 </td>
             </tr>

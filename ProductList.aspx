@@ -78,7 +78,7 @@
                                     </a>
                                     </h5>
                                     <p class="card-text"><span><b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span></p>
-                                    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger"><i class="fas fa-plus"></i>Thêm vào giỏ hàng</a>
+                                    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-red"><i class="fas fa-plus"></i>Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
 

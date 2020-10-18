@@ -32,7 +32,7 @@ String.Format("{0:c}",Item.UnitPrice) %></span>
                 </table>
 
                 <br />
-                <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger"><i class="fas fa-plus"></i>Thêm vào giỏ hàng</a>
+                <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-red"><i class="fas fa-plus"></i>Thêm vào giỏ hàng</a>
 
             </ItemTemplate>
 
