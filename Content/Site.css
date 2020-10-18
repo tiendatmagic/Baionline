@@ -176,15 +176,16 @@ body, html {
 .card {
     margin: 10px;
 }
+
 #myInput {
     margin: 0 auto;
 }
 
-    .card:hover {
-        -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
-        -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
-        box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
-    }
+.card:hover {
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
+}
 
 .cart {
     display: none;
@@ -203,6 +204,39 @@ body, html {
     padding-left: 30px;
     margin-bottom: 30px;
 }
+
+
+.btn-red {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: #FF0033;
+    z-index: 1;
+}
+
+    .btn-red::after {
+        content: "";
+        background: deeppink;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateX(-100%);
+        transition: transform, 0.3s;
+    }
+
+    .btn-red span {
+        position: relative;
+        z-index: 10;
+    }
+
+    .btn-red:hover::after {
+        transform: translateX(0%);
+        transition: transform, 0.3s;
+    }
 
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {
