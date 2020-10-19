@@ -253,7 +253,6 @@ D:\asp\Baitayonline\bin\Microsoft.Owin.Security.Twitter.xml
 D:\asp\Baitayonline\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\asp\Baitayonline\bin\Microsoft.Owin.Security.OAuth.xml
 D:\asp\Baitayonline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\asp\Baitayonline\obj\Debug\Baitayonline.csprojAssemblyReference.cache
 D:\asp\Baitayonline\obj\Debug\Baitayonline.csproj.CoreCompileInputs.cache
 D:\asp\Baitayonline\obj\Debug\Baitayonline.csproj.CopyComplete
 D:\asp\Baitayonline\obj\Debug\Baitayonline.dll
@@ -410,3 +409,4 @@ E:\Baitayonline\obj\Debug\Baitayonline.csproj.CopyComplete
 E:\Baitayonline\obj\Debug\Baitayonline.dll
 E:\Baitayonline\obj\Debug\Baitayonline.pdb
 E:\Baitayonline\obj\Debug\Baitayonline.csprojAssemblyReference.cache
+D:\asp\Baitayonline\obj\Debug\Baitayonline.csprojAssemblyReference.cache

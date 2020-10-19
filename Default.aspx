@@ -56,8 +56,9 @@
                         </GroupTemplate>
                         <ItemTemplate>
                             <div class="card" runat="server" style="width: 18rem;">
-                                <img src="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
-                                    style="border: 0.1px solid black" />
+                                                
+                                <img data-src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="lazy card-img-top"  loading="lazy"/>
+
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
                                         <span>
@@ -87,6 +88,17 @@
                             </table>
                         </LayoutTemplate>
                     </asp:ListView>
+
+                    <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
                 </div>
             </div>
         </div>

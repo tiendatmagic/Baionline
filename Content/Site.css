@@ -246,10 +246,18 @@ body, html {
         color: white !important;
     }
 
-    .navbar-menu a:hover {
-        color: blue !important;
-    }
+        .navbar-menu a:hover {
+            color: blue !important;
+        }
 
+
+#CategoryMenu a {
+    color: hotpink !important;
+}
+
+    #CategoryMenu a:hover {
+        color: orange !important;
+    }
 
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {
