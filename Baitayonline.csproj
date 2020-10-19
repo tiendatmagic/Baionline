@@ -229,7 +229,6 @@
     <Content Include="Images\b7.png" />
     <Content Include="Images\b8.jpg" />
     <Content Include="Images\b9.jpg" />
-    <Content Include="Images\book_logo.jpg" />
     <Content Include="Images\c1.jpg" />
     <Content Include="Images\c2.jpg" />
     <Content Include="Images\c3.jpg" />
@@ -237,11 +236,6 @@
     <Content Include="Images\c5.jpg" />
     <Content Include="Images\c6.jpg" />
     <Content Include="Images\logo.png" />
-    <Content Include="Images\Pic1.png" />
-    <Content Include="Images\Pic2.png" />
-    <Content Include="Images\Pic3.png" />
-    <Content Include="Images\Pic4.png" />
-    <Content Include="Images\Pic5.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
