@@ -15,7 +15,7 @@
         </asp:ListView>
     </div>
 
-       <section>
+    <section>
         <div>
 
 
@@ -40,7 +40,11 @@
                         </GroupTemplate>
                         <ItemTemplate>
                             <div class="card" runat="server" style="width: 18rem; margin: 10px;">
-<a href="ProductDetails.aspx?productID=<%#:Item.BookID%>"> <img src="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap" /></a>
+                                <a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
+                                    <img data-src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="lazy card-img-top" loading="lazy" />
+
+
+                                </a>
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
                                         <span>

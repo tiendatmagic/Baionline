@@ -36,7 +36,7 @@
             </div>
             <div class="mg">
                 <br />
-                <input type="text" id="myInput" class="form-control" style="width:300px" onkeyup="myFunction()" placeholder="Tìm kiếm sản phẩm" title="Nhập vào ô tìm kiếm">
+                <input type="text" id="myInput" class="form-control" style="width: 300px" onkeyup="myFunction()" placeholder="Tìm kiếm sản phẩm" title="Nhập vào ô tìm kiếm">
 
                 <h2>Sản phẩm mới</h2>
                 <div class="row" id="cardd" style="width: 100%">
@@ -56,9 +56,9 @@
                         </GroupTemplate>
                         <ItemTemplate>
                             <div class="card" runat="server" style="width: 18rem;">
-                                                
-                                <img data-src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="lazy card-img-top"  loading="lazy"/>
-
+                                <a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
+                                    <img data-src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="lazy card-img-top" loading="lazy" />
+                                </a>
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
                                         <span>
@@ -90,14 +90,14 @@
                     </asp:ListView>
 
                     <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
 
                 </div>
             </div>

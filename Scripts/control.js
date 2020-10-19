@@ -30,6 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("orientationChange", lazyload);
 });
 
+
+
+
+
 //
 // chức năng tìm kiếm
 function myFunction() {
