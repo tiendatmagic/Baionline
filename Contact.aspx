@@ -4,12 +4,14 @@
     <div class="mgg">
 
         <h3>Thông tin liên hệ</h3>
-        <address>
+        
             Tiendatmagic<br />
-            Số điện thoại: 0123456789
+            Số điện thoại: <br />
+            Địa chỉ: Nha Trang - Khánh Hòa<br />
+            Email: tiendatmagic8@gmail.com<br />
             <br />
 
-        </address>
+       
 
     </div>
 </asp:Content>

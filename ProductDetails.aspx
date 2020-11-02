@@ -14,7 +14,7 @@
                     <tr>
                         <td>
                             <img src="/Images/<%#:Item.ImagePath %>"
-                                style="border: solid; height: 225px" alt="<%#:Item.BookName
+                                style="border: none; height: 225px" alt="<%#:Item.BookName
 %>" />
                         </td>
                         <td>&nbsp;</td>

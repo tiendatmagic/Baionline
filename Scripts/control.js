@@ -64,10 +64,7 @@ else {
     pay.style.display = 'inline-block';
 }
 
-document.getElementsByClassName("btn-pay")[0].addEventListener("click", function () {
-    document.getElementsByClassName("cart")[0].style.display = 'block';
 
-});
 
 
 

@@ -48,9 +48,7 @@ Convert.ToDouble(Item.Book.UnitPrice)))%>
         <table>
             <tr>
                 <td>
-                    <div class="cart" id="cart">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMBZS8uUU9C5-5jE36cwGFp5jjkj4f4OdrKjbFT1pccTOxWg/viewform?embedded=true" width="470px" height="410" frameborder="1">Đang tải…</iframe>
-                    </div>
+
 
                     <asp:Button ID="UpdateBtn" CssClass="btn btn-success" runat="server" Text="Cập nhật/Xóa"
                         OnClick="UpdateBtn_Click" />

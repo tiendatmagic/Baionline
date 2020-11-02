@@ -166,8 +166,8 @@
                     <div class="col-sm-3 col-12">
                         <h4>CHÍNH SÁCH</h4>
                         <ul>
-                            <li>Chính sánh an toàn</li>
-                            <li>Miễn phí vận chuyền</li>
+                            <li><a href="#" style="color: #fff">Chính sách an toàn</a></li>
+                            <li><a href="#" style="color: #fff">Miễn phí vận chuyền</a></li>
 
                         </ul>
 

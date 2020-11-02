@@ -22,7 +22,7 @@
             <div class="mg">
 
 
-                <h2>Danh sách sản phẩm</h2>
+                <h2 style="color:red">Danh sách sản phẩm</h2>
                 <div class="row" id="cardd" style="width: 100%">
                     <asp:ListView ID="bookList" runat="server" DataKeyNames="BookID"
                         GroupItemCount="4"
@@ -41,7 +41,7 @@
                         <ItemTemplate>
                             <div class="card" runat="server" style="width: 18rem; margin: 10px;">
                                 <a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
-                                    <img data-src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="lazy card-img-top" loading="lazy" />
+                                    <img src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="card-img-top" />
 
 
                                 </a>
