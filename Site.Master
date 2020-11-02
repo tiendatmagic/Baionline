@@ -151,7 +151,7 @@
                 </div>
                 <div class="hotline-bar">
                     <a href="tel:0123456789">
-                        <span class="text-hotline">0123456789</span>
+                        <span class="text-hotline">0901980543</span>
                     </a>
                 </div>
             </div>
@@ -163,7 +163,7 @@
 
             <nav class="navbar navbar-expand-sm navbar-dark bg-light" style="background: deeppink !important; color: white;">
                 <p class="navbar-brand">
-                    <div class="col-sm-4 col-12">
+                    <div class="col-sm-3 col-12">
                         <h4>CHÍNH SÁCH</h4>
                         <ul>
                             <li>Chính sánh an toàn</li>
@@ -178,7 +178,8 @@
                             <a href="#"><span class="fab fa-youtube pd-3"></span></a>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-12">
+
+                    <div class="col-sm-3 col-12">
                         <h4>ĐỊA CHỈ</h4>
                         <div class="content">
                             <div class="place">
@@ -195,7 +196,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-12 text-center">
+
+                    <div class="col-sm-3 col-12">
+                        <h4>THỜI GIAN LÀM VIỆC</h4>
+                        <div class="content">
+                        <ul>
+                            <li>Thứ 2 - Thứ 6: 7 am - 9 pm</li>
+                            <li>Thứ 7: 7 am - 12 pm</li>
+                            <li>Chủ nhật: Đóng cửa</li>
+                        </ul>           
+        
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-12 text-center">
                         &copy; <%: DateTime.Now.Year %>
                     -Web Bán Bài Online
                 </p>

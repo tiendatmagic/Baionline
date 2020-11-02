@@ -38,7 +38,7 @@
                 <br />
                 <input type="text" id="myInput" class="form-control" style="width: 300px" onkeyup="myFunction()" placeholder="Tìm kiếm sản phẩm" title="Nhập vào ô tìm kiếm">
 
-                <h2>Sản phẩm mới</h2>
+                <h2 style="color:red">Sản phẩm mới</h2>
                 <div class="row" id="cardd" style="width: 100%">
                     <asp:ListView ID="bookList" runat="server" DataKeyNames="BookID"
                         GroupItemCount="4"
