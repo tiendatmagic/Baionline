@@ -46,7 +46,7 @@ CategoryName = "Chỉ dành cho bạn"
  {
  BookID = 1,
  BookName = "TRIDENT DELUXE PLAYING CARDS",
- Description = "No name",
+ Description = "Bộ bài màu vàng sang trọng đem lại cảm giác giàu sang cho người sử dụng",
  ImagePath = "b1.jpg",
 UnitPrice = 1100000f,
 CategoryID = 1
@@ -56,7 +56,7 @@ CategoryID = 1
  {
  BookID = 2,
 BookName = "VINTAGE FULTON'S PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài màu vàng óng ánh đem lại cảm giác đầy quyền lực và huyền bí",
  ImagePath = "b2.jpg",
  UnitPrice = 400000f,
 CategoryID = 2
@@ -66,7 +66,7 @@ CategoryID = 2
  {
  BookID = 3,
 BookName = "BRUSH PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài được thiết kế với màu úp màu đen kèm theo 3 màu chủ đạo xếp xung quanh nhau",
  ImagePath="b3.jpeg",
  UnitPrice = 500000f,
 CategoryID = 2
@@ -77,7 +77,7 @@ CategoryID = 2
  {
  BookID = 4,
 BookName = "SQUEEZERS PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài với màu đen xám là chủ đạo tạo cảm giác bí ẩn và huyền bí",
 ImagePath="b4.jpg",
 UnitPrice = 300000f,
 CategoryID = 3
@@ -87,7 +87,7 @@ CategoryID = 3
  {
  BookID = 5,
 BookName = "FONTAINE GREEN PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài được chế tạo từ thiên nhiên dành cho những ai yêu thích màu xanh",
  ImagePath= "b5.jpg",
 UnitPrice = 280000f,
 CategoryID = 4
@@ -97,7 +97,7 @@ CategoryID = 4
  {
  BookID = 6,
 BookName = "KING SLAYER PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài hình trái dâu tây cực đẹp",
 ImagePath="b6.jpg",
 UnitPrice = 300000f,
 CategoryID = 3
@@ -107,7 +107,7 @@ CategoryID = 3
  {
  BookID = 7,
 BookName = "ALPHABET PLAYING CARDS",
-Description = "No name",
+Description = "Bộ bài gồm các hình hoa tuyết bên trong kèm theo đó là những chữ cái bí ẩn",
 ImagePath="b7.png",
 UnitPrice = 280000f,
 CategoryID = 1
@@ -117,7 +117,7 @@ CategoryID = 1
  {
  BookID = 8,
 BookName = "1987 JAN PLAYING CARDS",
-Description = "No name",
+Description = "Bộ bài được thiết kế theo hướng cũ từ năm 1978 nhưng mang lại cảm giác cực kỳ sang trọng",
 ImagePath="b8.jpg",
 UnitPrice = 250000f,
 CategoryID = 2
@@ -127,7 +127,7 @@ CategoryID = 2
  {
  BookID = 9,
 BookName = "MONO X PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài màu đen với đường kẻ sọc bí ẩn",
 ImagePath="b9.jpg",
 UnitPrice = 370000f,
 CategoryID = 3
@@ -137,7 +137,7 @@ CategoryID = 3
  {
  BookID = 10,
 BookName = "SMOKE AND MIRRORS V6 PLAYING CARDS LIKE NEW",
-Description = "No name",
+Description = "Bộ bài màu nâu và hình khói",
 ImagePath="b10.jpg",
 UnitPrice = 360000f,
 CategoryID = 3
