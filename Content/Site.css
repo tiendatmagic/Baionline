@@ -258,6 +258,21 @@ html {
     color: deeppink;
 }
 
+
+#collapsibleNavId > ul > li > a, #cardd > div > div > h5 > a {
+    text-decoration: none;
+    position: relative;
+    transition: background-size .6s ease;
+    background-image: linear-gradient(180deg,transparent 89%, red 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    z-index: 1;
+}
+
+    #collapsibleNavId > ul > li > a:hover, #cardd > div > div > h5 > a:hover {
+        background-size: 100% 100%;
+    }
+
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {
         -webkit-transform: rotate(0) scale(0.5) skew(1deg);
