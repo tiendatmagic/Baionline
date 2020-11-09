@@ -22,8 +22,7 @@
                             <b>Description:</b><br />
                             <%#:Item.Description %>
                             <br />
-                            <span><b>Price:</b>&nbsp;<%#:
-String.Format("{0:c}",Item.UnitPrice) %></span>
+                            <span><b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span>
                             <br />
                             <span><b>Book Number:</b>&nbsp;<%#:Item.BookID %></span>
                             <br />
