@@ -1,4 +1,24 @@
-﻿// lazy load
+﻿
+function myFunction() {
+    var input, filter, cardd, div, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    cardd = document.getElementById("cardd");
+    div = cardd.getElementsByTagName("div");
+    for (i = 0; i < div.length; i++) {
+        a = div[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            div[i].style.display = "";
+        } else {
+            div[i].style.display = "none";
+        }
+    }
+}
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var lazyloadImages = document.querySelectorAll("img.lazy");
@@ -34,25 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//
-// chức năng tìm kiếm
-function myFunction() {
-    var input, filter, cardd, div, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    cardd = document.getElementById("cardd");
-    div = cardd.getElementsByTagName("div");
-    for (i = 0; i < div.length; i++) {
-        a = div[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            div[i].style.display = "";
-        } else {
-            div[i].style.display = "none";
-        }
-    }
-}
-//
+
+
 var mainshopping = document.getElementById("MainContent_ShoppingCartTitle");
 var pay = document.getElementsByClassName("btn-pay")[0];
 
@@ -63,8 +66,4 @@ if (mainshopping.innerHTML == "Giỏ hàng rỗng") {
 else {
     pay.style.display = 'inline-block';
 }
-
-
-
-
 

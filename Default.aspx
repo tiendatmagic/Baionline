@@ -56,9 +56,8 @@
                         </GroupTemplate>
                         <ItemTemplate>
                             <div class="card" runat="server" style="width: 18rem;">
-                                <a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
-                                    <img data-src="/Images/<%#:Item.ImagePath%>" alt="Card image" width="316" height="272" class="lazy card-img-top" loading="lazy" />
-                                </a>
+                                <img src="/Images/<%#:Item.ImagePath%>" width="316" height="272" class="card-img-top" alt="Card image cap"
+                                    style="border: 0.1px solid black" />
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="ProductDetails.aspx?productID=<%#:Item.BookID%>">
                                         <span>
@@ -67,7 +66,7 @@
                                     </a>
                                     </h5>
                                     <p class="card-text"><span><b>Giá |</b><%#:String.Format("{0:n}",Item.UnitPrice)%> đ</span></p>
-                                    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-red"><i class="fas fa-plus"></i>Thêm vào giỏ hàng</a>
+                                    <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>" class="btn btn-danger"><i class="fas fa-plus"></i>Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
 

@@ -5,6 +5,20 @@
     text-decoration: none !important;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: deeppink;
+    }
+
+
 body,
 html {
     width: 100%;
